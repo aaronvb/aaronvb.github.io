@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://aaronvb.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  title: 'Aaron Van Bokhoven - Ruby, Go, JavaScript',
+  subtitle: 'Polyglot Software Developer working with Ruby, Go, and JavaScript.',
+  copyright: '©2020 Aaron Van Bokhoven',
+  disqusShortname: 'aaronvanbokhoven',
+  postsPerPage: 5,
+  googleAnalyticsId: 'UA-2054867-1',
   useKatex: false,
   menu: [
     {
@@ -25,25 +25,26 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Aaron Van Bokhoven',
+    photo: '/photo.png',
+    bio: 'Polyglot Software Developer working with Ruby, Go, and JavaScript. Hobbyist street photographer and climber.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'bokhoven@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: 'aaronvb',
+      github: 'aaronvb',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'aaronvb',
+      instagram: 'aaronvb',
       line: '',
       gitlab: '',
       weibo: '',
       codepen: '',
       youtube: '',
       soundcloud: '',
+      flickr: 'aaronvb',
     }
   }
 };
