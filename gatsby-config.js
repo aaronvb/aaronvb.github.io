@@ -185,9 +185,9 @@ module.exports = {
         short_name: siteConfig.title,
         start_url: '/',
         background_color: '#FFF',
-        theme_color: '#F7A046',
+        theme_color: '#2f3442',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/photo.png'
       },
     },
     'gatsby-plugin-offline',
