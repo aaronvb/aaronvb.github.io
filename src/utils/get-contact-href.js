@@ -4,7 +4,7 @@ const getContactHref = (name: string, contact: string) => {
 
   switch (name) {
     case 'twitter':
-      href = `https://www.twitter.com/${contact}`;
+      href = `https://twitter.com/${contact}`;
       break;
     case 'github':
       href = `https://github.com/${contact}`;
@@ -44,6 +44,9 @@ const getContactHref = (name: string, contact: string) => {
       break;
     case 'soundcloud':
       href = `https://soundcloud.com/${contact}`;
+      break;
+    case 'flickr':
+      href = `https://flickr.com/photos/${contact}`;
       break;
     default:
       href = contact;
