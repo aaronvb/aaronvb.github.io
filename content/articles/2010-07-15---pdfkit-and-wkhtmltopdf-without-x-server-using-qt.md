@@ -7,6 +7,7 @@ date: "2010-07-15"
 template: "post"
 draft: false
 category: "Open Source"
+legacyArticleId: "26"
 tags:
   - "Code"
   - "Ruby on Rails"

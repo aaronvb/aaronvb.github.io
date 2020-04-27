@@ -7,6 +7,7 @@ date: "2011-09-24"
 template: "post"
 draft: false
 category: "Open Source"
+legacyArticleId: "38"
 tags:
   - "DevOps"
   - "Ruby on Rails"
