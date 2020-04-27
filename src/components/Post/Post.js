@@ -16,11 +16,13 @@ type Props = {
 const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
-  const { tags, title, date, legacyArticleId } = post.frontmatter;
+  const {
+    tags, title, date, legacyArticleId
+  } = post.frontmatter;
 
   let disqusId = slug;
   if (legacyArticleId !== null && legacyArticleId !== undefined) {
-    disqusId = legacyArticleId
+    disqusId = legacyArticleId;
   }
 
   return (
