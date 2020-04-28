@@ -14,7 +14,7 @@ tags:
   - "Go"
 ---
 
-![header](/media/simple-website-text-scraping-with-go-and-aws-lambda/header.jpeg)
+![header](../media/simple-website-text-scraping-with-go-and-aws-lambda/header.jpeg)
 
 Recently I needed to know when certain websites were updated with specific text. I decided to utilize AWS Lambda to save on cost of hosting a server, and use Go because it’s fast, and also because it’s one of the supported languages on AWS Lambda. I am also using AWS SES to send me e-mail notifications when results are found.
 
