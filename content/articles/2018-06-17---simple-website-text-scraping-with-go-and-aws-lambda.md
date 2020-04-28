@@ -14,7 +14,7 @@ tags:
   - "Go"
 ---
 
-![header](/media/simple-website-text-scraping-with-go-and-aws-lambda/header.jpeg)
+![header](../assets/simple-website-text-scraping-with-go-and-aws-lambda/header.jpeg)
 
 Recently I needed to know when certain websites were updated with specific text. I decided to utilize AWS Lambda to save on cost of hosting a server, and use Go because it’s fast, and also because it’s one of the supported languages on AWS Lambda. I am also using AWS SES to send me e-mail notifications when results are found.
 
@@ -40,15 +40,15 @@ Create an AWS Lambda function with the Go runtime, and select or create a role t
 
 Once the AWS Lambda function is created, upload the zip file and make sure the handler is set to `main`.
 
-[![function](/media/simple-website-text-scraping-with-go-and-aws-lambda/function.png)](/media/simple-website-text-scraping-with-go-and-aws-lambda/function.png)
+![function](../assets/simple-website-text-scraping-with-go-and-aws-lambda/function.png)
 
 Next, create 3 environment variables: `RECIPIENT` will be the email which receives the notification, `SENDER` which will be the email address that sends the notification, and last `SES_LOCATION` which is the location of your SES(ie: us-west-2).
 
-[![env_variables](/media/simple-website-text-scraping-with-go-and-aws-lambda/env_variables.png)](/media/simple-website-text-scraping-with-go-and-aws-lambda/env_variables.png)
+[![env_variables](../assets/simple-website-text-scraping-with-go-and-aws-lambda/env_variables.png)](../assets/simple-website-text-scraping-with-go-and-aws-lambda/env_variables.png)
 
 Don’t forget to add the email address to SES and verify it so it can receive emails.
 
-[![ses](/media/simple-website-text-scraping-with-go-and-aws-lambda/ses.png)](/media/simple-website-text-scraping-with-go-and-aws-lambda/ses.png)
+[![ses](../assets/simple-website-text-scraping-with-go-and-aws-lambda/ses.png)](../assets/simple-website-text-scraping-with-go-and-aws-lambda/ses.png)
 
 Now we can create a test event. In the event data pass a JSON hash which has a key `urls` and a string value with the urls you want to scrape, separated by commas, and a key `words`, with a string value of comma separated words you wish to scrape.
 
@@ -61,15 +61,15 @@ Example:
 }
 ```
 
-[![test_event](/media/simple-website-text-scraping-with-go-and-aws-lambda/test_event.png)](/media/simple-website-text-scraping-with-go-and-aws-lambda/test_event.png)
+[![test_event](../assets/simple-website-text-scraping-with-go-and-aws-lambda/test_event.png)](../assets/simple-website-text-scraping-with-go-and-aws-lambda/test_event.png)
 
 Click the test button and you should receive a successful function execution with logs and an email.
 
-[![test_action](/media/simple-website-text-scraping-with-go-and-aws-lambda/test_action.png)](/media/simple-website-text-scraping-with-go-and-aws-lambda/test_action.png)
+[![test_action](../assets/simple-website-text-scraping-with-go-and-aws-lambda/test_action.png)](../assets/simple-website-text-scraping-with-go-and-aws-lambda/test_action.png)
 
 The logs will contain the results, message ID from SES, and any errors while parsing or sending the email.
 
-[![email_example](/media/simple-website-text-scraping-with-go-and-aws-lambda/email_example.png)](/media/simple-website-text-scraping-with-go-and-aws-lambda/email_example.png)
+[![email_example](../assets/simple-website-text-scraping-with-go-and-aws-lambda/email_example.png)](../assets/simple-website-text-scraping-with-go-and-aws-lambda/email_example.png)
 
 *Success. The websites were scraped and my words were found!*
 
@@ -78,7 +78,7 @@ Now that the AWS Lambda function is working, it’s time to automate this and ha
 
 For this we’ll be using AWS CloudWatch events. So let’s head over there and create a new events rule.
 
-[![create_rule](/media/simple-website-text-scraping-with-go-and-aws-lambda/create_rule.png)](/media/simple-website-text-scraping-with-go-and-aws-lambda/create_rule.png)
+[![create_rule](../assets/simple-website-text-scraping-with-go-and-aws-lambda/create_rule.png)](../assets/simple-website-text-scraping-with-go-and-aws-lambda/create_rule.png)
 
 First we set the schedule to a fixed rate of 1 hour. Next, choose the Lambda function we created earlier. And finally, the most important part, select Configure input > Constant (JSON text), and paste in the JSON with the data to send to our function (see code below).
 

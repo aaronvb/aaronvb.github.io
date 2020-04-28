@@ -127,7 +127,7 @@ The output should look like: `ssh-rsa AASasdnl31nADLKAnrqppq...oeqnAE1== yourema
 
 Copy that to your github project deploy key:
 
-![deploy_key](/media/deploy_key_ss.jpg)
+![deploy_key](../assets/deploy_key_ss.jpg)
 
 You can verify that you did it correctly:
 

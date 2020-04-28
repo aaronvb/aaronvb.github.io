@@ -17,4 +17,4 @@ Last week I taught a photography class at Hawaii Camera aimed at new photographe
 
 Overall the turnout was better than I expected and everyone had walked out with a new perspective on photography.
 
-I would like to share the PDF of my presentation: [streetphotography by aaronvb.pdf](/media/streetphotography_by_aaronvb.pdf)
+I would like to share the PDF of my presentation: [streetphotography by aaronvb.pdf](../assets/streetphotography_by_aaronvb.pdf)
