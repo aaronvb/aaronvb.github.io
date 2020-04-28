@@ -18,8 +18,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/static/media`,
-        name: 'media'
+        path: `${__dirname}/content`,
+        name: 'pages'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: 'content/assets'
       }
     },
     {
@@ -27,20 +34,6 @@ module.exports = {
       options: {
         name: 'css',
         path: `${__dirname}/static/css`
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'assets',
-        path: `${__dirname}/static`
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content`,
-        name: 'pages'
       }
     },
     {
@@ -103,9 +96,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`,
-          },
-          {
             resolve: 'gatsby-remark-katex',
             options: {
               strict: 'ignore'
@@ -116,6 +106,7 @@ module.exports = {
             options: {
               maxWidth: 960,
               withWebp: true,
+              ignoreFileExtensions: [],
             }
           },
           {
