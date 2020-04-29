@@ -6,7 +6,7 @@ comments: true
 date: "2010-07-15"
 template: "post"
 draft: false
-category: "Open Source"
+category: "Tutorial"
 legacyArticleId: "26"
 tags:
   - "Code"
@@ -19,7 +19,7 @@ There are a few ways around this, some emulate X Server, but that seems hacky. I
 
 Here's what I did on my Ubuntu Box to get this to work (note: the compile time for qt was almost 2 hours, and you'll also need to have git installed):
 
-```console
+```text
 sudo apt-get build-dep libqt4-gui libqt4-network libqt4-webkit
 sudo apt-get install openssl build-essential xorg git-core git-doc libssl-dev
 
@@ -35,7 +35,7 @@ cd ..
 
 Next install wkhtmltopdf:
 
-```console
+```text
 git clone git://github.com/antialize/wkhtmltopdf.git wkhtmltopdf
 cd wkhtmltopdf
 ../wkqt/bin/qmake

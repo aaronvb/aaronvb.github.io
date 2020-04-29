@@ -6,7 +6,7 @@ comments: true
 date: "2009-10-24"
 template: "post"
 draft: false
-category: "Open Source"
+category: "Tutorial"
 tags:
   - "Code"
   - "Ruby on Rails"

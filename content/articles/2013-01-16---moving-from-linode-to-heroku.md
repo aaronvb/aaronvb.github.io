@@ -6,7 +6,7 @@ comments: true
 date: "2013-01-16"
 template: "post"
 draft: false
-category: "Open Source"
+category: "Tutorial"
 tags:
   - "DevOps"
   - "Heroku"

@@ -7,7 +7,7 @@ description: "A 60% Mechanical Keyboard build log featuring arrow keys."
 slug: "60-percent-keyboard"
 category: "Projects"
 tags:
-  - "Keyboard"
+  - "Keyboards"
 ---
 
 My 60% keyboard with arrow keys XD60 build, with more cat!

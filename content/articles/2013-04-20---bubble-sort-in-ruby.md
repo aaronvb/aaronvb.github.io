@@ -6,7 +6,7 @@ date: "2013-04-20"
 template: "post"
 draft: false
 slug: "bubble-sort-in-ruby"
-category: "Open Source"
+category: "Learn"
 tags:
   - "Code"
   - "Ruby"

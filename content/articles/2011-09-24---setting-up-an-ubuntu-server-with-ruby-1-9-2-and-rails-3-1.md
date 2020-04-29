@@ -6,7 +6,7 @@ comments: true
 date: "2011-09-24"
 template: "post"
 draft: false
-category: "Open Source"
+category: "Tutorial"
 legacyArticleId: "38"
 tags:
   - "DevOps"
@@ -30,7 +30,7 @@ So the first thing to do is make sure you have your Ubuntu server setup properly
 
 Once you have that done, the second article should end after you update. Next install Git.
 
-```console
+```text
 $ sudo aptitude build-dep git-core
 $ mkdir ~/sources
 $ cd ~/sources
@@ -44,26 +44,26 @@ $ sudo make install
 
 You can verify the installation by typing:
 
-```console
+```text
 $ git --version
 ```
 
 After git is installed, we need to get the packages for Ruby 1.9.2 to be compatible with Rails 3.1.
 
-```console
+```text
 $ sudo apt-get install openssl libssl-dev libreadline5-dev zlib1g-dev libncurses5-dev
 ```
 
 Next we need to log into root to install RVM.
 
-```console
+```text
 $ su
 $ bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
 ```
 
 Once RVM is installed, time to install Ruby 1.9.2. Make sure you're still logged in as root(through su). You'll need to source the RVM script every time you log into root. Normally you wont be doing this often enough to have it auto load, but you can if you want to.
 
-```console
+```text
 $ source /usr/local/rvm/scripts/rvm
 ```
 
@@ -71,7 +71,7 @@ Now you should have access to the command: `rvm`
 
 Install packages for Ruby 1.9.2 that Rails 3.1 will require.
 
-```console
+```text
 $ rvm pkg install readline
 $ rvm pkg install iconv
 $ rvm pkg install openssl
@@ -79,32 +79,32 @@ $ rvm pkg install openssl
 
 Now you can install Ruby 1.9.2
 
-```console
+```text
 $ rvm install 1.9.2 -C --with-openssl-dir=/usr/local/rvm/usr,--with-iconv-dir=/usr/local/rvm/usr,--with-readline-dir=/usr/local/rvm/usr
 ```
 
 Once that's finished, set Ruby 1.9.2 as the system default.
 
-```console
+```text
 $ rvm use 1.9.2 --default
 ```
 
 Then exit root su.
 
-```console
+```text
 $ exit
 ```
 
 You should be back to your normal user. Check to make sure rvm is loaded by typing 'rvm'. If nothing happens exit SSH and log back in. At this point, Ruby should be installed:
 
-```console
+```text
 $ ruby -v
 -> ruby 1.9.2p290 (2011-07-09 revision 32553) [i686-linux]
 ```
 
 Next install Bundler.
 
-```console
+```text
 $ rvmsudo gem install bundler
 ```
 
@@ -112,14 +112,14 @@ Before continuing, make sure your project is on a github repository.
 
 To be able to deploy the code from your github repo to this server, you need to have an rsa key that will be added to your github repository deploy key setting.
 
-```console
+```text
 $ cd ~/.ssh
 $ ssh-keygen -t rsa -C "youremailaddress@whatever.com"
 ```
 
 Once that's done, copy the contents of the `id_rsa.pub `key.
 
-```console
+```text
 $ cat id_rsa.pub
 ```
 
@@ -131,14 +131,14 @@ Copy that to your github project deploy key:
 
 You can verify that you did it correctly:
 
-```console
+```text
 $ ssh -T git@github.com
 -> Hi aaronvb! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 Next, Ubuntu dependencies for sqlite3:
 
-```console
+```text
 $ sudo apt-get install sqlite3 libsqlite3-dev
 ```
 
@@ -148,14 +148,14 @@ You have two options when deploying your app with the new asset pipeline. Compil
 
 `On your LOCAL computer:`
 
-```console
+```text
 $ gem install capistrano
 $ gem install bundler
 ```
 
 Setup capistrano in your app:
 
-```console
+```text
 $ cd your/app/
 $ capify .
 ```
@@ -211,7 +211,7 @@ end
 
 Now to setup the directories for capistrano on  your server. `Still on your LOCAL computer`:
 
-```console
+```text
 $ cap deploy:setup
 $ cap deploy:check
 -> You appear to have all necessary dependencies installed
@@ -219,7 +219,7 @@ $ cap deploy:check
 
 Now to deploy JUST the code from your github repository:
 
-```console
+```text
 $ cap deploy:update_code
 ```
 
@@ -229,13 +229,13 @@ When you find it, go to `/releases/` and go to the only folder in there. It shou
 
 So at this point you should be sitting in your app root directory on your server. The next step is to get your apps gems installed, easy:
 
-```console
+```text
 $ bundle install
 ```
 
 After that finishes, time to install node.js. This is required to compile the assets for the asset pipeline in Rails 3.1. If you decided to compile your assets on your local computer, you can skip this. I followed the instruction from: [github.com/joyent/node/wiki/Installing-Node.js-via-package-manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) for this part.
 
-```console
+```text
 $ sudo apt-get install python-software-properties
 $ sudo add-apt-repository ppa:chris-lea/node.js
 $ sudo apt-get update
@@ -246,7 +246,7 @@ If you're using sqlite as the database, you might run into a little problem when
 
 Time to set the database up in your app. Change directories back to your project.
 
-```console
+```text
 $ rake db:create RAILS_ENV=production
 $ rake db:migrate RAILS_ENV=production
 ```
@@ -255,7 +255,7 @@ You can test your app now by trying the console: `$ rails c production`.
 
 Installing Apache 2 and Passenger:
 
-```console
+```text
 $ sudo aptitude install apache2
 $ rvmsudo gem install passenger
 $ sudo apt-get install apache2-prefork-dev
@@ -268,7 +268,7 @@ Follow the instructions that Passenger presents after the installation. It shoul
 
 The last part is to create the virtual host for your app:
 
-```console
+```text
 $ cd /etc/apache2/sites-available
 $ sudo nano yoursite.com
 ```
@@ -292,7 +292,7 @@ Inside that file add. Note: I'm basing this off of my deploy script I provided. 
 
 Save the file, disable and enable a few things, then restart apache2.
 
-```console
+```text
 $ sudo a2dissite default
 $ sudo a2ensite yoursite.com
 $ sudo a2enmod rewrite

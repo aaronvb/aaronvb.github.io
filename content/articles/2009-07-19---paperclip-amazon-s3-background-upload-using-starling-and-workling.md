@@ -6,7 +6,7 @@ comments: true
 date: "2009-07-19"
 template: "post"
 draft: false
-category: "Open Source"
+category: "Tutorial"
 legacyArticleId: "15"
 tags:
   - "Code"
@@ -39,7 +39,7 @@ The next idea was to have some sort of ‘syncing’ to Amazon S3 system. Let Pa
 
 Let’s assume you already have your rails app, starling/workling installed and running, and paperclip installed and working on the model of your choice. Let’s also assume we’re applying this to a User model and the attachment is an avatar. You’ll also need the aws-s3 gem(http://amazon.rubyforge.org) and add that to your environment.rb.
 
-```console
+```text
 sudo gem install aws-s3
 ```
 
@@ -62,7 +62,7 @@ The :url is set to the Amazon’s S3 link so that when we generate urls with obj
 
 A new column is needed for this model to let us know when the background uploading is being processed.
 
-```console
+```text
 script/generate migration add_processing_upload_to_user processing_upload:boolean
 rake db:migrate
 ```

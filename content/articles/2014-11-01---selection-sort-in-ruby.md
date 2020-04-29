@@ -6,7 +6,7 @@ date: "2014-11-01"
 template: "post"
 draft: false
 slug: "selection-sort-in-ruby"
-category: "Open Source"
+category: "Learn"
 tags:
   - "Code"
   - "Ruby"

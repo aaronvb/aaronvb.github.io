@@ -6,7 +6,7 @@ comments: true
 date: "2010-10-27"
 template: "post"
 draft: false
-category: "Open Source"
+category: "Tutorial"
 legacyArticleId: "28"
 tags:
   - "Code"

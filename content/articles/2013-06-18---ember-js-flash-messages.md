@@ -5,7 +5,7 @@ date: "2016-03-30"
 template: "post"
 draft: false
 slug: "ember-js-flash-messages"
-category: "Open Source"
+category: "Tutorial"
 legacyArticleId: "49"
 tags:
   - "Code"

@@ -24,14 +24,14 @@ First, clone the repo contains the script.
 
 https://github.com/aaronvb/aws_lambda_go_scraper
 
-```console
+```text
 $ git clone git@github.com:aaronvb/aws_lambda_go_scraper.git
 $ cd aws_lambda_go_scraper
 ```
 
 Then we’ll build the Go script and zip it up for AWS Lambda.
 
-```console
+```text
 $ GOOS=linux GOARCH=amd64 go build -o main lambda_scraper.go
 $ zip main.zip main
 ```

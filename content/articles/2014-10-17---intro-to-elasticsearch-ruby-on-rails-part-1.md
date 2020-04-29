@@ -6,7 +6,7 @@ date: "2014-10-17"
 template: "post"
 draft: false
 slug: "intro-to-elasticsearch-ruby-on-rails-part-1"
-category: "Open Source"
+category: "Tutorial"
 tags:
   - "Code"
   - "Elasticsearch"
@@ -38,7 +38,7 @@ We don't need to use elasticsearch-persistence because elasticsearch-model will 
 
 The easiest way to install Elasticsearch is by using [Homebrew](https://brew.sh/), which I hope you are already using.
 
-```console
+```text
 > brew install elasticsearch
 > elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml
 ```
@@ -54,7 +54,7 @@ User.__elasticsearch__.client = Elasticsearch::Client.new host: ENV['ELASTICSEAR
 
 Alright, so if you haven't already figured it out from the code above, we're going to be searching a *User* model. Create a User table if you don't already have one, and make sure it has a first name and email column.
 
-```console
+```text
 > rails g model user first_name:string email:string
 > rake db:migrate
 ```
@@ -70,7 +70,7 @@ end
 
 That's pretty much all you need to do to start searching the User model. By default this will search all the columns in this model. Open up the rails console to see how easy it is.
 
-```console
+```text
 > rails c
 Loading development environment (Rails 4.1.6)
 irb(main):001:0> User.import
@@ -83,7 +83,7 @@ One thing you'll notice is the *import* method that I'm calling on the User mode
 
 If you read up on the documentation, you'll be able to do some neat things like find the score each result. One thing I want to mention is that if you use the *records* method instead of the *results* method, you will get a collection of ActiveRecord objects instead of Elasticsearch objects.
 
-```console
+```text
 irb(main):001:0> User.search("aaron").results.first
 => #<Elasticsearch::Model::Response::Result:0x007fd200e71380 @result=#<Hashie::Mash _id="155" _index="users" _score=0.5878618...
 > User.search("aaron").results.first._score
@@ -94,7 +94,7 @@ irb(main):001:0> User.search("aaron").results.first
 
 Cool, so now we can search our User table. But what if we have associations that need to be searched as well? Elasticsearch has a model function for that. Let's start by creating our association model: PhoneNumber, and adding the associations to our models.
 
-```console
+```text
 > rails g model phone_number number:string user_id:integer
 > rake db:migrate
 ```
@@ -134,7 +134,7 @@ end
 
 I'll explain what's going on here. When Elasticsearch indexes our User object, we are telling it that we only want to search the id, first name, and email attribute, and all phone numbers associated with this object. To better visualize what the document looks like, open up the rails console.
 
-```console
+```text
 > rails c
 irb(main):001:0> User.first.as_indexed_json
 => {"id"=>1, "email"=>"bokhoven@gmail.com", "first_name"=>"aaron",
@@ -150,7 +150,7 @@ To create a separate Phone Number index and have Elasticsearch emulate the assoc
 
 Let's rebuilt and test our new search index.
 
-```console
+```text
 irb(main):001:0> User.import
 => 0
 > query = User.search("123-456-7890").records.first
@@ -163,7 +163,7 @@ Easy, everything works. Not quite. When using associations, it's not a good idea
 
 This is with records.
 
-```console
+```text
 irb(main):001:0> User.search("aaron").records.first
   User Search (10.1ms) {index: "users", type: "user", q: "aaron"}
   User Load (3.0ms)  SELECT "users".* FROM "users"  WHERE "users"."id" IN (155, 156, 157, 158)
@@ -180,7 +180,7 @@ You can see that another call was made to the PhoneNumber model because we're ca
 
 This is with results.
 
-```console
+```text
 irb(main):001:0> User.search("aaron").results.first
   User Search (10.1ms) {index: "users", type: "user", q: "aaron"}
 => #<Hashie::Mash id: 155, first_name: "aaron", email: "bokhoven@gmail.com"...
@@ -192,7 +192,7 @@ irb(main):001:0> User.search("aaron").results.first
 
 With that said, let's move on to the last topic I wanted to cover, adding values to the search document that are created by a method in the model. An example of this could be a *full name* method that returns a first and last name column together. It makes more sense to search the full name value instead of both columns separately. We'll use that example in our app.
 
-```console
+```text
 > rails g migration add_last_name_to_users last_name:string
 > rake db:migrate
 ```
@@ -220,7 +220,7 @@ end
 
 I added the *full_name* method to our User model, and then modified the as\_indexed\_json method to include the full\_name method, and also added it to the document by including it in the *only* collection. You can always double check what the document looks like by calling the the as\_indexed\_json method on a User model, I explained how earlier in this article.
 
-```console
+```text
 irb(main):001:0> User.search("aaron van bokhoven").results.first
 => #<Hashie::Mash id: 155, full_name: "aaron van bokhoven", email: "bokhoven@gmail.com"...
 ```

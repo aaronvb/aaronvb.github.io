@@ -2,11 +2,11 @@
 title: Thunderbolt External Hard Drive with Seagate STAE128 Adapter
 description: "Yes, you can use the Seagate STAE128 Thunderbolt Adapter for Backup Plus with any SATA external 2.5\" Hard Drive."
 comments: true
-slug: "external-hard-drive-with-seagate-stae128-adapter"
+slug: "thunderbolt-external-hard-drive-with-seagate-stae128-adapter"
 date: "2012-12-14"
 template: "post"
 draft: false
-category: "Projects"
+category: "Tutorial"
 legacyArticleId: "45"
 tags:
   - "Hardware"
