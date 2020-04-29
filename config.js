@@ -31,7 +31,7 @@ module.exports = {
       label: 'Open Source Articles',
       path: '/category/open-source'
     },
-        {
+    {
       label: 'Tutorials',
       path: '/category/tutorial'
     }
