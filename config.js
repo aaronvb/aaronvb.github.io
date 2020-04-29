@@ -22,6 +22,18 @@ module.exports = {
     {
       label: 'Contact me',
       path: '/contact'
+    },
+    {
+      label: 'Resume',
+      path: '/aaronvb_resume.pdf'
+    },
+    {
+      label: 'Open Source Articles',
+      path: '/category/open-source'
+    },
+        {
+      label: 'Tutorials',
+      path: '/category/tutorial'
     }
   ],
   author: {
