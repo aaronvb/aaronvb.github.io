@@ -240,7 +240,16 @@ exports[`NotFoundTemplate renders correctly 1`] = `
         className="page__body"
       >
         <p>
-          You just hit a route that doesn't exist... the sadness.
+          Sorry, the content you are trying to find is not here.
+        </p>
+        <p>
+          If you feel like there should be something here, please 
+          <a
+            href="/contact"
+          >
+            contact me
+          </a>
+          .
         </p>
       </div>
     </div>
