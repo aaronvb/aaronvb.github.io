@@ -22,7 +22,7 @@ http://redux.js.org/docs/basics/ExampleTodoList.html
 The above link has a minimal example of a Redux implementation, and is what I used as base for my project.
 
 <figure>
-  <img src="/media/a-simple-react-native-redux-example/1.png" alt="directory structure">
+  <img src="../assets/a-simple-react-native-redux-example/1.png" alt="directory structure">
   <figcaption>
     This is the directory structure of the app which contains Components, Containers, and Reducers, pretty common with a standard React/Redux app.
   </figcaption>
@@ -30,7 +30,7 @@ The above link has a minimal example of a Redux implementation, and is what I us
 
 
 <figure>
-  <img src="/media/a-simple-react-native-redux-example/2.gif" alt="example">
+  <img src="../assets/a-simple-react-native-redux-example/2.gif" alt="example">
   <figcaption>Simple React Native Redux Example app running in iPhone Simulator.</figcaption>
 </figure>
 
