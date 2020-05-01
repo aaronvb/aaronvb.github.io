@@ -11,6 +11,8 @@ const Author = () => {
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
         {author.bio}
+      </p>
+      <p>
         <a
           className={styles['author__bio-twitter']}
           href={getContactHref('twitter', author.contacts.twitter)}
