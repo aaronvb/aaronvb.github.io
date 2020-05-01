@@ -216,6 +216,11 @@ exports[`Sidebar renders correctly 1`] = `
       </ul>
     </div>
     <div
+      className="daily"
+    >
+      Happy Thursday. ☕
+    </div>
+    <div
       className="copyright"
     >
       Test copyright
