@@ -27,7 +27,7 @@ describe('IndexTemplate', () => {
   });
 
   it('renders correctly', () => {
-    MockDate.set('2020-04-30');
+    MockDate.set(new Date('2020-04-30T11:01:58.135Z'));
     const tree = renderer.create(<IndexTemplate {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
     MockDate.reset();
