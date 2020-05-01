@@ -23,31 +23,31 @@ After more research I came upon the Seagate Thunder Bolt Adapter, STAE 121, that
 
 When I got there I found the newer version, the Seagate Thunderbolt Adapter _For Backup Plus_, or STAE128. A little confused, I tried to google it but found nothing. I bought it, and a Thunderbolt plug by Apple.
 
-![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/Photo%20Dec%2014%2C%201%2031%2046%20PM.jpg)
+![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/1.jpg)
 
-![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/Photo%20Dec%2014%2C%201%2031%2058%20PM.jpg)
+![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/2.jpg)
 
 At first I thought I would need to use a SATA cable to connect my hard drive, but it actually plugged right into it.
 
-![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/Photo%20Dec%2014%2C%201%2033%2005%20PM.jpg)
+![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/3.jpg)
 
-![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/Photo%20Dec%2014%2C%201%2033%2026%20PM.jpg)
+![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/4.jpg)
 
-![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/Photo%20Dec%2014%2C%201%2034%2011%20PM.jpg)
+![STAE 128 Seagate Thunderbolt Adapter for Backup Plus](../assets/stae128/5.jpg)
 
 I'm using a Seagate Momentus 7200rpm 500gb hard drive which I pulled from my old Macbook Pro. I don't have any benchmarks from when that was installed internally, but I did find a few through google and this seems to be about the average.
 
 My results using the same hard drive and the Seagate Thunderbolt Adapter STAE128 were very close to that.
 
-![Seagate Thunderbolt Adapter for Backup Plus STAE128 Benchmark](../assets/stae128/Screen%20Shot%202012-12-14%20at%201.57.21%20PM.png)
+![Seagate Thunderbolt Adapter for Backup Plus STAE128 Benchmark](../assets/stae128/6.png)
 
 Compared to my 2TB Western Digital External HDD USB2.0.
 
-![Compare](../assets/stae128/Screen%20Shot%202012-12-14%20at%202.09.12%20PM.png)
+![Compare](../assets/stae128/7.png)
 
 and for fun, compared to the internal 256gb SSD that's inside my Macbook Retina.
 
-![Macbook Pro Retina 256gb SSD Benchmark](../assets/stae128/Screen%20Shot%202012-12-14%20at%202.11.37%20PM.png)
+![Macbook Pro Retina 256gb SSD Benchmark](../assets/stae128/8.png)
 
 Overall I'm definitely happy with the STAE128. I get to use my SATA 2.5" hard drives that I have laying around, I get speeds that match internal speeds, it's portable and self powered, and best of all it was only $99(+$50 for the Thunderbolt cable). The price alone beats any of the other Thunderbolt options out right now.
 

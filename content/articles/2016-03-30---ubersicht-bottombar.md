@@ -28,4 +28,4 @@ You'll need to download [Übersicht](http://tracesof.net/uebersicht/), which is 
 
 Here's a screenshot of it in use:
 
-[![ubersicht3.png](../assets/ubersicht3.png)](../assets/ubersicht3.png)
+![ubersicht3.png](../assets/ubersicht3.png)

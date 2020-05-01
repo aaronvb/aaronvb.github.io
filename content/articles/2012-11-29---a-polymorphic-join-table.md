@@ -24,11 +24,11 @@ Say I have a Location and a Checkpoint, and the Location and Checkpoint can have
 
 Example, two Locations which are near each other, maybe they're coordinates, could share a single Note describing the general area, and with the same Note model, one Note may describe multiple Checkpoints.
 
-![example_1](../assets/Screen%20Shot%202012-11-29%20at%2011.59.59%20AM.jpg)
+![example_1](../assets/polymorphic_join_table_example_1.jpg)
 
 Solution: Make the join table polymorphic.
 
-![example_2](../assets/Screen%20Shot%202012-11-29%20at%204.53.50%20PM.jpg)
+![example_2](../assets/polymorphic_join_table_example_2.jpg)
 
 Notes model that contains the content and user_id, which I use to associate the User model with.
 

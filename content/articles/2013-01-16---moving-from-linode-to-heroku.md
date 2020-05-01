@@ -121,7 +121,7 @@ end
 
 In the Heroku web application settings add the [Scheduler add-on](https://elements.heroku.com/addons/scheduler). Then add the heroku run command for that rake task.
 
-[![heroku_scheduler](../assets/Screen%20Shot%202013-01-16%20at%204.12.02%20PM.png)](../assets/Screen%20Shot%202013-01-16%20at%204.12.02%20PM.png)
+![heroku_scheduler](../assets/heroku_scheduler.png)
 
 That pretty much covers my move from Linode to Heroku. I highly suggest reading through the Heroku documents.
 

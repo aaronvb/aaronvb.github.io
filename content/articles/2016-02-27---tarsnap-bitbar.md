@@ -34,4 +34,4 @@ Anyway, I updated my git repo to include a BitBar plugin and also updated the ma
 
 And here's a screenshot of it in use:
 
-[![bitbar_ss.png](../assets/bitbar_ss.png)](../assets/bitbar_ss.png)
+![bitbar_ss.png](../assets/bitbar_ss.png)
