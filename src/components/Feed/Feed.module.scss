@@ -27,6 +27,16 @@
       font-size: $typographic-base-font-size;
       @include line-height(1);
       @include margin-bottom(.75);
+
+      &-link {
+        color: $color-base;
+
+        &:hover,
+        &:focus {
+          color: $color-base;
+        }
+
+      }
     }
 
     &-meta {
