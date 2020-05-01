@@ -6,6 +6,7 @@ import CategoriesListTemplate from './categories-list-template';
 import siteMetadata from '../../jest/__fixtures__/site-metadata';
 import allMarkdownRemark from '../../jest/__fixtures__/all-markdown-remark';
 import type { RenderCallback } from '../types';
+import MockDate from 'mockdate';
 
 describe('CategoriesListTemplate', () => {
   const props = {
@@ -23,7 +24,9 @@ describe('CategoriesListTemplate', () => {
   });
 
   it('renders correctly', () => {
+    MockDate.set('2020-04-30')
     const tree = renderer.create(<CategoriesListTemplate />).toJSON();
     expect(tree).toMatchSnapshot();
+    MockDate.reset();
   });
 });

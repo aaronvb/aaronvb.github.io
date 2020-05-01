@@ -2,10 +2,6 @@
 import React from 'react';
 import styles from './Daily.module.scss';
 
-type Props = {
-  dayOfWeek: number
-};
-
 const getWeekDay = (dayOfWeek) => {
   let msg;
   switch (dayOfWeek) {
@@ -36,9 +32,9 @@ const getWeekDay = (dayOfWeek) => {
   return msg;
 };
 
-const Copyright = ({ dayOfWeek }: Props) => (
+const Copyright = () => (
   <div className={styles['daily']}>
-    {getWeekDay(dayOfWeek)}
+    {getWeekDay((new Date()).getDay())}
   </div>
 );
 

@@ -4,6 +4,6 @@ exports[`Daily renders correctly 1`] = `
 <div
   className="daily"
 >
-  Happy Thursday. ☕
+  Happy Wednesday. ☕
 </div>
 `;

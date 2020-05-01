@@ -2,14 +2,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Daily from './Daily';
+import MockDate from 'mockdate';
 
+const getCurrentDate = () => new Date();
 describe('Daily', () => {
   it('renders correctly', () => {
-    const props = {
-      dayOfWeek: 4
-    };
-
-    const tree = renderer.create(<Daily {...props} />).toJSON();
+    MockDate.set('2020-04-30')
+    const tree = renderer.create(<Daily />).toJSON();
     expect(tree).toMatchSnapshot();
+    MockDate.reset();
   });
 });

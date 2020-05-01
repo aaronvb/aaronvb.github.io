@@ -5,6 +5,7 @@ import { useStaticQuery, StaticQuery } from 'gatsby';
 import Sidebar from './Sidebar';
 import siteMetadata from '../../../jest/__fixtures__/site-metadata';
 import type { RenderCallback } from '../../types';
+import MockDate from 'mockdate';
 
 describe('Sidebar', () => {
   beforeEach(() => {
@@ -21,7 +22,9 @@ describe('Sidebar', () => {
   };
 
   it('renders correctly', () => {
+    MockDate.set('2020-04-30')
     const tree = renderer.create(<Sidebar {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
+    MockDate.reset();
   });
 });

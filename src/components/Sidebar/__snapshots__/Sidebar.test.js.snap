@@ -218,7 +218,7 @@ exports[`Sidebar renders correctly 1`] = `
     <div
       className="daily"
     >
-      Happy Thursday. ☕
+      Happy Wednesday. ☕
     </div>
     <div
       className="copyright"

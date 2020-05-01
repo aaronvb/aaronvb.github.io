@@ -6,6 +6,7 @@ import PageTemplate from './page-template';
 import siteMetadata from '../../jest/__fixtures__/site-metadata';
 import markdownRemark from '../../jest/__fixtures__/markdown-remark';
 import type { RenderCallback } from '../types';
+import MockDate from 'mockdate';
 
 describe('PageTemplate', () => {
   const props = {
@@ -24,7 +25,9 @@ describe('PageTemplate', () => {
   });
 
   it('renders correctly', () => {
+    MockDate.set('2020-04-30')
     const tree = renderer.create(<PageTemplate {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
+    MockDate.reset();
   });
 });

@@ -6,6 +6,7 @@ import TagsListTemplate from './tags-list-template';
 import siteMetadata from '../../jest/__fixtures__/site-metadata';
 import allMarkdownRemark from '../../jest/__fixtures__/all-markdown-remark';
 import type { RenderCallback } from '../types';
+import MockDate from 'mockdate';
 
 describe('TagsListTemplate', () => {
   const props = {
@@ -23,7 +24,9 @@ describe('TagsListTemplate', () => {
   });
 
   it('renders correctly', () => {
+    MockDate.set('2020-04-30')
     const tree = renderer.create(<TagsListTemplate />).toJSON();
     expect(tree).toMatchSnapshot();
+    MockDate.reset();
   });
 });
