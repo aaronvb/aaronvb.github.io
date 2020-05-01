@@ -79,6 +79,8 @@ exports[`Post renders correctly 1`] = `
         className="author__bio"
       >
         Test bio
+      </p>
+      <p>
         <a
           className="author__bio-twitter"
           href="https://twitter.com/#"
