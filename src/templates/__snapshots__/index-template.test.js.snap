@@ -219,6 +219,11 @@ exports[`IndexTemplate renders correctly 1`] = `
         </ul>
       </div>
       <div
+        className="daily"
+      >
+        Happy Thursday. ☕
+      </div>
+      <div
         className="copyright"
       >
         Test copyright
@@ -273,16 +278,15 @@ exports[`IndexTemplate renders correctly 1`] = `
                 test_0
               </a>
             </h2>
-            <p
-              className="feed__item-description"
-            >
-              test_0
-            </p>
             <a
-              className="feed__item-readmore"
+              className="feed__item-description-link"
               href="/test_0"
             >
-              Read
+              <p
+                className="feed__item-description"
+              >
+                test_0
+              </p>
             </a>
           </div>
           <div
@@ -321,16 +325,15 @@ exports[`IndexTemplate renders correctly 1`] = `
                 test_1
               </a>
             </h2>
-            <p
-              className="feed__item-description"
-            >
-              test_1
-            </p>
             <a
-              className="feed__item-readmore"
+              className="feed__item-description-link"
               href="/test_1"
             >
-              Read
+              <p
+                className="feed__item-description"
+              >
+                test_1
+              </p>
             </a>
           </div>
         </div>
