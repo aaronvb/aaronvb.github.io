@@ -58,4 +58,4 @@ PCB mount stabilizers.
 
 A few of my thoughts so far: The under-glow is neat but I’ll need a new case. It’s weird having 2x 1u shift, still not used to it yet. PCB mount feels more unstable than plate mount, might be louder also. The cat logo is really cool. I should have used SIP sockets. Down and Right arrow LED have opposite positive and negative terminals.
 
-I've open-sourced the keymap for my keyboard, check it out at [https://github.com/aaronvb/xd60-keymap](https://github.com/aaronvb/xd60-keymap).
+I've open-sourced the keymap for my keyboard, check it out at [github.com/aaronvb/xd60-keymap](https://github.com/aaronvb/xd60-keymap).

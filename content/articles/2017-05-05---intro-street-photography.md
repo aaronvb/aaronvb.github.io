@@ -13,7 +13,7 @@ tags:
 
 Last week I taught a photography class at Hawaii Camera aimed at new photographers who were interested in learning the basics of street photography. It was my third photography class, and my first street photography class.
 
-[https://www.eventbrite.com/e/street-photography-an-introduction-for-new-photographers-tickets-33878881647](https://www.eventbrite.com/e/street-photography-an-introduction-for-new-photographers-tickets-33878881647)
+[www.eventbrite.com/e/street-photography-an-introduction-for-new-photographers-tickets-33878881647](https://www.eventbrite.com/e/street-photography-an-introduction-for-new-photographers-tickets-33878881647)
 
 Overall the turnout was better than I expected and everyone had walked out with a new perspective on photography.
 

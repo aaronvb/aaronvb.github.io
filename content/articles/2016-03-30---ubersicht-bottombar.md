@@ -22,7 +22,7 @@ The same friend who showed me i3 suggested I try [KWM](https://github.com/koekei
 
 Before my switch to KWM, I was using iStat Menus for system information and with the menu bar hidden, it became useless to run. The KWM repo shows an example of  nice menu bar replacement, with system information, and I thought that would be nicer if it was at the bottom, like i3. I used that as a starting point, added network traffic and weather data, and ended up with this:
 
-[https://github.com/aaronvb/ubersicht-bottombar](https://github.com/aaronvb/ubersicht-bottombar)
+[github.com/aaronvb/ubersicht-bottombar](https://github.com/aaronvb/ubersicht-bottombar)
 
 You'll need to download [Übersicht](http://tracesof.net/uebersicht/), which is the widget app this uses.
 

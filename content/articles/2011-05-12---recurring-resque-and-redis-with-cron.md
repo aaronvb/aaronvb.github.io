@@ -67,10 +67,10 @@ And this is what goes in the crontab, which can be accessed by typing 'crontab -
 
 For reference:
 
-Redis - [https://redis.io](https://redis.io)
+Redis - [redis.io](https://redis.io)
 
-Resque - [https://github.com/resque/resque](https://github.com/resque/resque)
+Resque - [github.com/resque/resque](https://github.com/resque/resque)
 
-Resque Intro - [https://github.blog/2009-11-03-introducing-resque](https://github.blog/2009-11-03-introducing-resque)
+Resque Intro - [github.blog/2009-11-03-introducing-resque](https://github.blog/2009-11-03-introducing-resque)
 
-Redis Ruby Gem(should get installed when installing resque) - [https://github.com/redis/redis-rb](https://github.com/redis/redis-rb)
+Redis Ruby Gem(should get installed when installing resque) - [github.com/redis/redis-rb](https://github.com/redis/redis-rb)

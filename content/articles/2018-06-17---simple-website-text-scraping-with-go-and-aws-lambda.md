@@ -22,7 +22,7 @@ Bellow I’ll be showing you how to compile the Go script, setup the AWS Lambda 
 
 First, clone the repo contains the script.
 
-https://github.com/aaronvb/aws_lambda_go_scraper
+[github.com/aaronvb/aws\_lambda\_go\_scraper](https://github.com/aaronvb/aws_lambda_go_scraper)
 
 ```text
 $ git clone git@github.com:aaronvb/aws_lambda_go_scraper.git

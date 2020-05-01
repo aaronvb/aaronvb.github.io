@@ -1,4 +1,4 @@
-Project forked from [https://github.com/alxshelepenok/gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen)
+Project forked from [github.com/alxshelepenok/gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen)
 
 ## Noteable changes
 - Styling

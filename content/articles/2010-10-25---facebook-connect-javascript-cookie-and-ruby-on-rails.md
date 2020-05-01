@@ -19,7 +19,7 @@ I wrote this class to verify(using Facebook's cookie verification article) and p
 
 This can definitely work without Ruby on Rails, but you may need to change a few things.
 
-Reference: Facebook Connect Javascript SDK [http://developers.facebook.com/docs/reference/javascript/](http://developers.facebook.com/docs/reference/javascript/)
+Reference: Facebook Connect Javascript SDK [developers.facebook.com/docs/reference/javascript/](http://developers.facebook.com/docs/reference/javascript/)
 
 To use this in Ruby on Rails, save this file into your RAILS_ROOT/lib folder. If you alter or use this code please contribute back!
 
