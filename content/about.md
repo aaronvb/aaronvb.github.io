@@ -7,7 +7,7 @@ I am a Software Developer with over a decade of web development experience, work
 
 I love learning new things about programming and programming languages, and also sharing my knowledge. I'm an advocate of pair programming, which I believe offers a way to learn and teach simultaneously while producing quality code. I owe my career to open source and I try my best to contribute back. Check out [my Github](https://github.com/aaronvb) to see what I'm currently up to.
 
-When I'm not coding, I'm most likely climbing with my wife and friends, or out taking photos on the streets and developing film at home.
+In my free time, I'm most likely climbing outdoors with my wife and friends, or out taking photos on the streets and developing film at home.
 
 ![me_1](./assets/me_1.jpg)
 *Street Photography Workshop, May 2017*
