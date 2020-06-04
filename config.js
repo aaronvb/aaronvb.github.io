@@ -13,25 +13,25 @@ module.exports = {
   menu: [
     {
       label: 'Articles',
-      path: '/'
+      path: '#articles'
     },
     {
-      label: 'About',
-      path: '/about'
-    },
-    {
-      label: 'Contact',
-      path: '/contact'
+      label: 'Projects',
+      path: '#projects'
     },
     {
       label: 'Resume',
       path: '/aaronvb_resume.pdf'
+    },
+    {
+      label: 'Contact',
+      path: '#contact'
     }
   ],
   author: {
     name: 'Aaron Van Bokhoven',
-    photo: '/photo.png',
-    bio: 'Polyglot Software Developer working with Ruby, Go, and JavaScript. Hobbyist street photographer and climber.',
+    photo: '/photo.jpg',
+    bio: 'Software developer working with Ruby, Go, and JavaScript. Hobbyist street photographer and climber.',
     contacts: {
       email: 'bokhoven@gmail.com',
       facebook: '',
