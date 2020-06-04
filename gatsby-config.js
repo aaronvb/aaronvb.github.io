@@ -173,7 +173,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#2f3442',
         display: 'standalone',
-        icon: 'static/photo.png'
+        icon: 'static/photo.jpg'
       },
     },
     'gatsby-plugin-offline',
