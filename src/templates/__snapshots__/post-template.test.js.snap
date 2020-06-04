@@ -161,7 +161,7 @@ exports[`PostTemplate renders correctly 1`] = `
         <div
           className="daily"
         >
-          Happy Wednesday. ☕
+          Happy Thursday. ☕
         </div>
       </div>
     </div>
