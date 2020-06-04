@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Author renders correctly 1`] = `
+<div
+  className="author"
+>
+  <span
+    className="author__title"
+  >
+    <a
+      className="author__title-link"
+      href="/"
+    >
+      test
+    </a>
+  </span>
+</div>
+`;

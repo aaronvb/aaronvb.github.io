@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.author {
+  &__title {
+    font-size: $typographic-base-font-size * 1.125;
+    font-weight: 600;
+    @include line-height(1.125);
+
+    &-link {
+      color: $color-base;
+
+      &:hover,
+      &:focus {
+        color: $color-base
+      }
+
+    }
+
+  }
+}
+
+@include breakpoint-sm {
+  .author {
+    lost-column: 4/12;
+  }
+}
