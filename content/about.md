@@ -1,16 +1,19 @@
 ---
 title: "About me"
-template: "page"
 ---
 
-I am a Software Developer with over a decade of web development experience, working with Ruby/Ruby on Rails, JavaScript, and Go. I currently work remotely, from Hawaii, at Real Geeks/Fidelity National Finance as a Full Stack Software Developer -- previously I worked at Hawaii Camera and Buoy Alarm, both in an engineering role.
+<figure class="float-right">
+  <img src="/photo.jpg" alt="Aaron Van Bokhoven" />
+</figure>
 
-I love learning new things about programming and programming languages, and also sharing my knowledge. I'm an advocate of pair programming, which I believe offers a way to learn and teach simultaneously while producing quality code. I owe my career to open source and I try my best to contribute back. Check out [my Github](https://github.com/aaronvb) to see what I'm currently up to.
+Hi--I'm Aaron Van Bokhoven, a software developer living in Honolulu, Hawaii.
 
-In my free time, I'm most likely climbing outdoors with my wife and friends, or out taking photos on the streets and developing film at home.
+I have over a decade of web development experience, working with Ruby/Ruby on Rails, JavaScript, and Go.
 
-![me_1](./assets/me_1.jpg)
-*Street Photography Workshop, May 2017*
+I work at [Real Geeks/Fidelity National Finance](https://www.realgeeks.com/) as a Full Stack Software Developer. Previously, I worked at Hawaii Camera and Buoy Alarm, both in an engineering role.
 
-![me_2](./assets/me_3.jpg)
-*PK's on Maui, March 2020*
+I like to develop software and design practical systems for the web.
+
+I'm a big fan of pair programming when working on a project. It's an effective way of sharing knowledge and can present opportunities to teach and learn.
+
+In my free time I love learning about how things work; from programming languages to science, I often go down a rabbit hole of discovery. When I'm not indoors, I'm most likely sport climbing at the local crag or taking photos on the streets.
