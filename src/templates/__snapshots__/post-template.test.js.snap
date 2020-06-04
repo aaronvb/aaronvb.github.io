@@ -5,25 +5,63 @@ exports[`PostTemplate renders correctly 1`] = `
   className="layout"
 >
   <div
+    className="topbar"
+  >
+    <div
+      className="topbar__inner"
+    >
+      <div
+        className="author"
+      >
+        <span
+          className="author__title"
+        >
+          <a
+            className="author__title-link"
+            href="/"
+          >
+            Test name
+          </a>
+        </span>
+      </div>
+      <nav
+        className="menu"
+      >
+        <a
+          className="menu__list-item-link"
+          href="//test/1/"
+        >
+          Test label 1
+        </a>
+        <a
+          className="menu__list-item-link"
+          href="//test/2/"
+        >
+          Test label 2
+        </a>
+        <a
+          className="menu__list-item-link"
+          href="//test/3/"
+        >
+          Test label 3
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div
     className="post"
   >
-    <a
-      className="post__home-button"
-      href="/"
-    >
-      All Articles
-    </a>
     <div
       className="post__content"
     >
       <div
         className="content"
       >
-        <h1
+        <h2
           className="content__title"
         >
           test
-        </h1>
+        </h2>
         <div
           className="content__body"
           dangerouslySetInnerHTML={
@@ -101,6 +139,32 @@ exports[`PostTemplate renders correctly 1`] = `
     <div
       className="post__comments"
     />
+  </div>
+  <div
+    className="footer"
+  >
+    <div
+      className="footer__inner"
+    >
+      <div
+        className="footer__copyright"
+      >
+        <div
+          className="copyright"
+        >
+          Test copyright
+        </div>
+      </div>
+      <div
+        className="footer__daily"
+      >
+        <div
+          className="daily"
+        >
+          Happy Wednesday. ☕
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;

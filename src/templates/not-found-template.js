@@ -1,8 +1,9 @@
 // @flow strict
 import React from 'react';
-import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
+import Topbar from '../components/Topbar';
+import Footer from '../components/Footer';
 import { useSiteMetadata } from '../hooks';
 
 const NotFoundTemplate = () => {
@@ -10,11 +11,12 @@ const NotFoundTemplate = () => {
 
   return (
     <Layout title={`Not Found - ${title}`} description={subtitle}>
-      <Sidebar />
+      <Topbar />
       <Page title="NOT FOUND">
         <p>Sorry, the content you are trying to find is not here.</p>
-        <p>If you feel like there should be something here, please <a href="/contact">contact me</a>.</p>
+        <p>If you feel like there should be something here, please <a href="/#contact">contact me</a>.</p>
       </Page>
+      <Footer />
     </Layout>
   );
 };

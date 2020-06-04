@@ -3,6 +3,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
+import Topbar from '../components/Topbar';
+import Footer from '../components/Footer';
 import { useSiteMetadata } from '../hooks';
 import type { MarkdownRemark } from '../types';
 
@@ -20,7 +22,9 @@ const PostTemplate = ({ data }: Props) => {
 
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} >
+      <Topbar />
       <Post post={data.markdownRemark} />
+      <Footer />
     </Layout>
   );
 };
