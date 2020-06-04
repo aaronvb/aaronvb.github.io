@@ -56,4 +56,17 @@ export type AllMarkdownRemark = {
   }[]
 };
 
+export type IndexContext = {
+  index: {
+    edges: Edges,
+  },
+  group: {
+    fieldValue: string,
+    totalCount: number
+  }[],
+  about: MarkdownRemark,
+  projects: MarkdownRemark,
+  contact: MarkdownRemark
+}
+
 export type MarkdownRemark = Node;
