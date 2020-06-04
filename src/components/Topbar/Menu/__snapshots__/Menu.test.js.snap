@@ -6,13 +6,13 @@ exports[`Menu renders correctly 1`] = `
 >
   <a
     className="menu__list-item-link"
-    href="//#0/"
+    href="/#0/"
   >
     Item 0
   </a>
   <a
     className="menu__list-item-link"
-    href="//#1/"
+    href="/#1/"
   >
     Item 1
   </a>

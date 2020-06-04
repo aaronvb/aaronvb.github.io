@@ -13,11 +13,11 @@ module.exports = {
   menu: [
     {
       label: 'Articles',
-      path: '#articles'
+      path: '/#articles'
     },
     {
       label: 'Projects',
-      path: '#projects'
+      path: '/#projects'
     },
     {
       label: 'Resume',
@@ -25,7 +25,7 @@ module.exports = {
     },
     {
       label: 'Contact',
-      path: '#contact'
+      path: '/#contact'
     }
   ],
   author: {

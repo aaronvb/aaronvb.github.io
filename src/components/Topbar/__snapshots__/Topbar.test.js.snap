@@ -26,19 +26,19 @@ exports[`Tobar renders correctly 1`] = `
     >
       <a
         className="menu__list-item-link"
-        href="//test/1/"
+        href="/test/1/"
       >
         Test label 1
       </a>
       <a
         className="menu__list-item-link"
-        href="//test/2/"
+        href="/test/2/"
       >
         Test label 2
       </a>
       <a
         className="menu__list-item-link"
-        href="//test/3/"
+        href="/test/3/"
       >
         Test label 3
       </a>

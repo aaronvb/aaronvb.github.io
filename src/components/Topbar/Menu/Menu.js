@@ -14,7 +14,7 @@ const Menu = ({ menu }: Props) => (
       {menu.map((item) => (
           <a
             key={item.path}
-            href={`/${item.path}`}
+            href={`${item.path}`}
             className={styles['menu__list-item-link']}
           >
             {item.label}
