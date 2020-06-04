@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://aaronvb.com',
   pathPrefix: '/',
   title: 'Aaron Van Bokhoven - Ruby, Go, JavaScript',
-  subtitle: 'Polyglot Software Developer working with Ruby, Go, and JavaScript.',
+  subtitle: 'Software developer working with Ruby, Go, and JavaScript. Hobbyist street photographer and climber.',
   copyright: '©2020 Aaron Van Bokhoven',
   disqusShortname: 'aaronvanbokhoven',
   postsPerPage: 5,
