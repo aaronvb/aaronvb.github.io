@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact renders correctly 1`] = `
+<div
+  className="contact"
+>
+  <div
+    className="contact__inner"
+  >
+    <h4
+      className="page__title"
+      href="#contact"
+      id="contact"
+    >
+      Contact
+    </h4>
+    <div
+      className="contact__body"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>test</p>",
+        }
+      }
+    />
+  </div>
+</div>
+`;
