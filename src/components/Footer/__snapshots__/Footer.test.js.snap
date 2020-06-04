@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tobar renders correctly 1`] = `
+<div
+  className="footer"
+>
+  <div
+    className="footer__inner"
+  >
+    <div
+      className="footer__copyright"
+    >
+      <div
+        className="copyright"
+      >
+        Test copyright
+      </div>
+    </div>
+    <div
+      className="footer__daily"
+    >
+      <div
+        className="daily"
+      >
+        Happy Thursday. ☕
+      </div>
+    </div>
+  </div>
+</div>
+`;

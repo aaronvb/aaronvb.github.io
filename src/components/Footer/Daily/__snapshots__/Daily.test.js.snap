@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Daily renders correctly 1`] = `
+<div
+  className="daily"
+>
+  Happy Thursday. ☕
+</div>
+`;
