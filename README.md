@@ -1,7 +1,9 @@
 Project forked from [github.com/alxshelepenok/gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen)
 
 ## Noteable changes
-- Styling
+- Styling overhaul
+- New components
+- Single column layout
 - Added daily messages
 - Added support for custom Disqus comment ID in frontmatter
 - Fixed issue with gatsby-remark-images not working properly
