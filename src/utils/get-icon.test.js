@@ -1,6 +1,6 @@
 // @flow strict
 import getIcon from './get-icon';
-import { ICONS } from '../constants';
+import ICONS from '../constants/icons';
 
 test('getIcon', () => {
   expect(getIcon('twitter')).toBe(ICONS.TWITTER);
