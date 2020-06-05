@@ -253,9 +253,11 @@ exports[`IndexTemplate renders correctly 1`] = `
             >
               <time
                 className="feed__item-meta-time"
-                dateTime="September 1, 2016"
+                dateTime="Sep 01, 2016"
               >
-                Sep 2016
+                Sep
+                 
+                2016
               </time>
               <div
                 className="feed__item-inner"
@@ -294,9 +296,11 @@ exports[`IndexTemplate renders correctly 1`] = `
             >
               <time
                 className="feed__item-meta-time"
-                dateTime="September 1, 2016"
+                dateTime="Sep 01, 2016"
               >
-                Sep 2016
+                Sep
+                 
+                2016
               </time>
               <div
                 className="feed__item-inner"
