@@ -1,6 +1,6 @@
 ---
 title: Chaining API requests with redux-thunk
-date: "2018-02-7"
+date: "2018-02-07"
 template: "post"
 comments: true
 description: "I recently came upon a simple problem where I couldn’t find an easy solution to, on the Google or SO. However, I did find the parts to the answer, and put them together to get this working."
