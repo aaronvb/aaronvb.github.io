@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       label: 'Resume',
-      path: '/aaronvb_resume.pdf'
+      path: '/aaronvb_resume_2020_12_14.pdf'
     },
     {
       label: 'Contact',
