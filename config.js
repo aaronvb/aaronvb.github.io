@@ -33,7 +33,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Software developer working with Ruby, Go, and JavaScript. Hobbyist street photographer and climber.',
     contacts: {
-      email: 'aaronvb@hey.com',
+      email: 'bokhoven@gmail.com',
       facebook: '',
       telegram: '',
       twitter: 'aaronvb',
