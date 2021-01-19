@@ -11,7 +11,7 @@ tags:
   - "Code"
   - "Ruby"
   - "React"
-  - "Rails"
+  - "Ruby on Rails"
   - "JavaScript"
 ---
 

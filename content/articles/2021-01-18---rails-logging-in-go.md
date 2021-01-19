@@ -8,7 +8,7 @@ slug: "rails-inspired-logging-in-go"
 category: "Open Source"
 tags:
   - "Code"
-  - "Rails"
+  - "Ruby on Rails"
   - "Go"
   - "Logging"
   - "Middleware"
