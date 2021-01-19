@@ -8,7 +8,6 @@ module.exports = {
   copyright: '©2020 Aaron Van Bokhoven',
   disqusShortname: 'aaronvanbokhoven',
   postsPerPage: 5,
-  googleAnalyticsId: 'UA-2054867-1',
   useKatex: false,
   menu: [
     {

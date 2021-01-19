@@ -125,15 +125,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-netlify',
     {
-      resolve: 'gatsby-plugin-google-gtag',
-      options: {
-        trackingIds: [siteConfig.googleAnalyticsId],
-        pluginConfig: {
-          head: true,
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         query: `
