@@ -6790,14 +6790,6 @@ gatsby-plugin-flow@^1.2.1:
     "@babel/preset-flow" "^7.9.0"
     "@babel/runtime" "^7.9.2"
 
-gatsby-plugin-google-gtag@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.1.0.tgz#d4679bf371a24f10e822e69fc202d9c91f5be749"
-  integrity sha512-qzOwu+KQgLXQdcoNS5Gl1yOdbEqKHK1al5Af5LxNeV9WsRG6EOgAtbzey0ylRhz/XUR5PveQ3shVYebc8fn1KQ==
-  dependencies:
-    "@babel/runtime" "^7.9.2"
-    minimatch "^3.0.4"
-
 gatsby-plugin-manifest@^2.3.3:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.0.tgz#8b4b1ca8169d764e9141325a9d03c9666dc13f54"
@@ -17203,9 +17195,9 @@ xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 "y18n@^3.2.1 || ^4.0.0", y18n@^4.0.0:
   version "4.0.0"
