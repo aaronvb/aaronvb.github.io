@@ -8,9 +8,9 @@ title: "About me"
 
 Hi--I'm Aaron Van Bokhoven, a Software Developer living in Honolulu, Hawaii.
 
-I have over a decade of web development experience working with Ruby/Ruby on Rails, JavaScript, and Go. 
+I have over a decade of web development experience working with Ruby/Ruby on Rails, JavaScript, and Go.
 
-I work at [Real Geeks/Fidelity National Finance](https://www.realgeeks.com/) as a Full Stack Software Developer. Previously I worked at Hawaii Camera and Buoy Alarm, both in an engineering role.
+I work at [Real Geeks/Fidelity National Financial](https://www.realgeeks.com/) as a Full Stack Software Developer. Previously I worked at Hawaii Camera and Buoy Alarm, both in an engineering role.
 
 I like to develop software and design practical systems for the web.
 
