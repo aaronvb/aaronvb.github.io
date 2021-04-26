@@ -6790,14 +6790,6 @@ gatsby-plugin-flow@^1.2.1:
     "@babel/preset-flow" "^7.9.0"
     "@babel/runtime" "^7.9.2"
 
-gatsby-plugin-google-gtag@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.1.0.tgz#d4679bf371a24f10e822e69fc202d9c91f5be749"
-  integrity sha512-qzOwu+KQgLXQdcoNS5Gl1yOdbEqKHK1al5Af5LxNeV9WsRG6EOgAtbzey0ylRhz/XUR5PveQ3shVYebc8fn1KQ==
-  dependencies:
-    "@babel/runtime" "^7.9.2"
-    minimatch "^3.0.4"
-
 gatsby-plugin-manifest@^2.3.3:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.0.tgz#8b4b1ca8169d764e9141325a9d03c9666dc13f54"
@@ -14898,9 +14890,9 @@ sshpk@^1.7.0:
     tweetnacl "~0.14.0"
 
 ssri@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
-  integrity sha512-3Wge10hNcT1Kur4PDFwEieXSCMCJs/7WvSACcrMYrNp+b8kDL1/0wJch5Ni2WrtwEa2IO8OsVfeKIciKCDx/QA==
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.2.tgz#157939134f20464e7301ddba3e90ffa8f7728ac5"
+  integrity sha512-cepbSq/neFK7xB6A50KHN0xHDotYzq58wWCa5LeWqnPrHG8GzfEjO/4O8kpmcGW+oaxkvhEJCWgbgNk4/ZV93Q==
   dependencies:
     figgy-pudding "^3.5.1"
 
