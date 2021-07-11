@@ -1,8 +1,0 @@
-@import '../../../assets/scss/variables';
-@import '../../../assets/scss/mixins';
-
-.daily {
-  @include margin-bottom(.25);
-  color: lighten($color-gray, 18%);
-  font-size: $typographic-small-font-size;
-}
