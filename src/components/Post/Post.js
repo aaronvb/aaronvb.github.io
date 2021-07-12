@@ -14,15 +14,10 @@ type Props = {
 
 const Post = ({ post }: Props) => {
   const { html } = post;
-  const { tagSlugs, slug } = post.fields;
+  const { tagSlugs } = post.fields;
   const {
-    tags, title, date, legacyArticleId
+    tags, title, date
   } = post.frontmatter;
-
-  let disqusId = slug;
-  if (legacyArticleId !== null && legacyArticleId !== undefined) {
-    disqusId = legacyArticleId;
-  }
 
   return (
     <div className={styles['post']}>
@@ -37,7 +32,7 @@ const Post = ({ post }: Props) => {
       </div>
 
       <div className={styles['post__comments']}>
-        <Comments postSlug={disqusId} postTitle={post.frontmatter.title} />
+        <Comments />
       </div>
     </div>
   );

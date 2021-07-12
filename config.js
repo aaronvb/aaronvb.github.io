@@ -6,7 +6,6 @@ module.exports = {
   title: 'Aaron Van Bokhoven - Software Developer',
   subtitle: 'Software developer working with Ruby, Go, and JavaScript. Hobbyist street photographer and climber.',
   copyright: '©2020 Aaron Van Bokhoven',
-  disqusShortname: 'aaronvanbokhoven',
   postsPerPage: 5,
   useKatex: false,
   menu: [

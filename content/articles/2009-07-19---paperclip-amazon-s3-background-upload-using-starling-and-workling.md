@@ -7,7 +7,6 @@ date: "2009-07-19"
 template: "post"
 draft: false
 category: "Tutorial"
-legacyArticleId: "15"
 tags:
   - "Code"
   - "Ruby on Rails"

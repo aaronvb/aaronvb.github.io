@@ -6,7 +6,6 @@ template: "post"
 draft: false
 slug: "ember-js-flash-messages"
 category: "Tutorial"
-legacyArticleId: "49"
 tags:
   - "Code"
   - "Ember.js"

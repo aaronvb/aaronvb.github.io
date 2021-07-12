@@ -1,27 +1,20 @@
-// @flow strict
-import React from 'react';
-import ReactDisqusComments from 'react-disqus-comments';
-import { useSiteMetadata } from '../../../hooks';
+import React, { useEffect } from 'react';
 
-type Props = {
-  postTitle: string,
-  postSlug: string
-};
-
-const Comments = ({ postTitle, postSlug }: Props) => {
-  const { url, disqusShortname } = useSiteMetadata();
-
-  if (!disqusShortname) {
-    return null;
-  }
+const Comments = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    const anchor = document.getElementById('inject-comments-for-uterances');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('crossorigin', 'anonymous');
+    script.setAttribute('async', true);
+    script.setAttribute('repo', 'aaronvb/aaronvb.github.io');
+    script.setAttribute('issue-term', 'title');
+    script.setAttribute('theme', 'github-light');
+    anchor.appendChild(script);
+  });
 
   return (
-    <ReactDisqusComments
-      shortname={disqusShortname}
-      identifier={postSlug}
-      title={postTitle}
-      url={url + postSlug}
-    />
+    <div id='inject-comments-for-uterances'></div>
   );
 };
 

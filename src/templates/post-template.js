@@ -15,13 +15,13 @@ type Props = {
 };
 
 const PostTemplate = ({ data }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { subtitle: siteSubtitle } = useSiteMetadata();
   const { frontmatter } = data.markdownRemark;
   const { title: postTitle, description: postDescription } = frontmatter;
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} >
+    <Layout title={`${postTitle}`} description={metaDescription} >
       <Topbar />
       <Post post={data.markdownRemark} />
       <Footer />
@@ -43,7 +43,6 @@ export const query = graphql`
         description
         tags
         title
-        legacyArticleId
       }
     }
   }

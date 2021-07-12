@@ -7,7 +7,6 @@ date: "2012-12-14"
 template: "post"
 draft: false
 category: "Tutorial"
-legacyArticleId: "45"
 tags:
   - "Hardware"
 ---

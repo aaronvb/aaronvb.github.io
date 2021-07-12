@@ -5,7 +5,6 @@ Project forked from [github.com/alxshelepenok/gatsby-starter-lumen](https://gith
 - New components
 - Single column layout
 - Added daily messages
-- Added support for custom Disqus comment ID in frontmatter
 - Fixed issue with gatsby-remark-images not working properly
 - Changed assets folder structure; moved inside content folder
 - Removed Netlify CMS
@@ -13,3 +12,4 @@ Project forked from [github.com/alxshelepenok/gatsby-starter-lumen](https://gith
 - Renamed posts to articles
 - Changed PrismJS theme to Dracula
 - Add frontmatter boolean to turn off comments for an individual post: `comments: false`
+- Add utterances https://utteranc.es

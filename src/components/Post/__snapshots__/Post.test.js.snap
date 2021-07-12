@@ -95,6 +95,10 @@ exports[`Post renders correctly 1`] = `
   </div>
   <div
     className="post__comments"
-  />
+  >
+    <div
+      id="inject-comments-for-uterances"
+    />
+  </div>
 </div>
 `;
