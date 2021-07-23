@@ -1,4 +1,107 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Aaron Van Bokhoven - Software Developer]]></title><description><![CDATA[Software developer working with Ruby, Go, and JavaScript. Hobbyist street photographer and climber.]]></description><link>https://aaronvb.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 Jul 2021 01:55:32 GMT</lastBuildDate><item><title><![CDATA[Rails Inspired Logging in Go]]></title><description><![CDATA[Verbose logging in development is one of the few things I miss about Ruby on Rails. I made two libraries to bring that to Go and explain how to set that up with middleware.]]></description><link>https://aaronvb.com/articles/rails-inspired-logging-in-go</link><guid isPermaLink="false">https://aaronvb.com/articles/rails-inspired-logging-in-go</guid><pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;One of the few things I miss from &lt;a href=&quot;https://rubyonrails.org&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Ruby on Rails&lt;/a&gt; is the verbose logging the framework provides to you in development. If you’re not coming from Ruby on Rails I believe this will still be applicable and beneficial to your development in Go. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Aaron Van Bokhoven - Software Developer]]></title><description><![CDATA[Software developer working with Ruby, Go, and JavaScript. Hobbyist street photographer and climber.]]></description><link>https://aaronvb.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Jul 2021 02:57:46 GMT</lastBuildDate><item><title><![CDATA[Request Hole, Testing Endpoints and Webhooks]]></title><description><![CDATA[Request Hole is a CLI tool and web UI for creating temporary endpoints for testing requests and webhooks.]]></description><link>https://aaronvb.com/articles/request-hole</link><guid isPermaLink="false">https://aaronvb.com/articles/request-hole</guid><pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve been working on a few side projects where I needed to inspect webhooks and initially used RequestBin to do this. However, I had issues with their service being down a few times and had some concerns about privacy. The alternative CLI tools I found required language dependencies and were a bit of a hassle to set up.&lt;/p&gt;
+&lt;p&gt;This felt like a good excuse to make a CLI tool in Go, which would require no dependencies or versions of languages; just compile, or download, the executable for your operating system.&lt;/p&gt;
+&lt;p&gt;My initial goal for the tool was to expose an endpoint and print incoming requests to the terminal output and/or write to a log file. This was the first release of &lt;a href=&quot;https://github.com/aaronvb/request_hole&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Request Hole&lt;/a&gt;. (Also known as &lt;code class=&quot;language-text&quot;&gt;rh&lt;/code&gt;, which is the CLI executable.)&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dc994fb9fde2ed45f620b3dfe607cc06/80f66/rh-terminal-ui.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.08333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAADBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAExe7kiJMv/xAAaEAACAwEBAAAAAAAAAAAAAAACAwABBBMU/9oACAEBAAEFAtDDp/VkwlZIZjo2eAYhPEP/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAfEAACAQMFAQAAAAAAAAAAAAAAAQIREiEiMTIzUZH/2gAIAQEABj8CnSct/Tsl9NTbyOV7yc2Wp1P/xAAYEAEBAQEBAAAAAAAAAAAAAAABEQAh8f/aAAgBAQABPyEIAHAZ7vJFS+rcuwqyby8FZ1a7/9oADAMBAAIAAwAAABB8D//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABYRAAMAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxChf//EABsQAQEBAAIDAAAAAAAAAAAAAAERAFHRMcHw/9oACAEBAAE/EHvxEQDgN9J708jqlIc55O7BQuW6ubhVyTzOt//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/dc994fb9fde2ed45f620b3dfe607cc06/8ac56/rh-terminal-ui.webp 240w,
+/static/dc994fb9fde2ed45f620b3dfe607cc06/d3be9/rh-terminal-ui.webp 480w,
+/static/dc994fb9fde2ed45f620b3dfe607cc06/e46b2/rh-terminal-ui.webp 960w,
+/static/dc994fb9fde2ed45f620b3dfe607cc06/f992d/rh-terminal-ui.webp 1440w,
+/static/dc994fb9fde2ed45f620b3dfe607cc06/db549/rh-terminal-ui.webp 1576w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/dc994fb9fde2ed45f620b3dfe607cc06/09b79/rh-terminal-ui.jpg 240w,
+/static/dc994fb9fde2ed45f620b3dfe607cc06/7cc5e/rh-terminal-ui.jpg 480w,
+/static/dc994fb9fde2ed45f620b3dfe607cc06/6a068/rh-terminal-ui.jpg 960w,
+/static/dc994fb9fde2ed45f620b3dfe607cc06/644c5/rh-terminal-ui.jpg 1440w,
+/static/dc994fb9fde2ed45f620b3dfe607cc06/80f66/rh-terminal-ui.jpg 1576w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/dc994fb9fde2ed45f620b3dfe607cc06/6a068/rh-terminal-ui.jpg&quot;
+          alt=&quot;Request Hole Terminal UI&quot;
+          title=&quot;Request Hole Terminal UI&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Building the first release was relatively straight forward. It was working great and with the help of &lt;a href=&quot;https://pterm.sh/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;pterm&lt;/a&gt; I was able to make the terminal output look modern. I later realized it would be a bit more useful to have a web interface that could show me the incoming requests, in real time, similar to RequestBin.&lt;/p&gt;
+&lt;p&gt;This required a lot of refactoring as the architecture at that point didn’t support having two Goroutines (http servers in our case, one for the incoming requests and one to serve the web UI) running in parallel.&lt;/p&gt;
+&lt;p&gt;From the very beginning I wanted Request Hole to have an interface for outputs called &lt;code class=&quot;language-text&quot;&gt;renderers&lt;/code&gt; that could be implemented by any renderer we want to add. This could be a terminal printer, a log writer, or a web UI. To add the web UI, I had to change the way renderers were called, which at the time was synchronous, and decided to move them into individual Goroutines where they could be run in parallel.&lt;/p&gt;
+&lt;p&gt;By moving the renderers to Go routines, they needed a way to communicate with the incoming request endpoint so I utilized channels. I then moved all the renderer logic into a higher level function that manages all the Goroutines and channels.&lt;/p&gt;
+&lt;p&gt;After the big refactor, the next step was to start serving the web UI. I decided on &lt;a href=&quot;https://github.com/facebook/create-react-app&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;create-react-app&lt;/a&gt; which provided mostly everything I needed to start building the front-end. Thankfully Go introduced the embed feature in 1.16 which made embedding and serving the front-end static files easy.&lt;/p&gt;
+&lt;p&gt;The next big decision was to use GraphQL instead of a standard REST API. Pushing incoming requests to the front-end through websockets was a requirement and I had read about GraphQL’s subscriptions, so going with GraphQL felt like a good solution, and a fun experiment. Although not the easiest to setup, compared to a traditional REST API, and facing some weird quirks and nuances, I did manage to get all the plumbing sorted out with &lt;a href=&quot;https://github.com/99designs/gqlgen&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;gqlgen&lt;/a&gt; and &lt;a href=&quot;https://www.apollographql.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Apollo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One thing I learned was that mapping Go types to GraphQL types don’t always, and most likely won’t, work out. The solution to that is to create custom types using scalars and once I figured that out everything went swimmingly. After getting GraphQL sorted out all that was left to do was to create the UI. I decided on Tailwind so I didn’t have to write any CSS.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d135462eb79eae7206e3892d16e925a6/c1595/rh-web-ui.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 69.16666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAeuvAof/xAAaEAACAwEBAAAAAAAAAAAAAAAAAQIRExIx/9oACAEBAAEFAs4syiJcllnp/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAARAAEaEx/9oACAEBAAY/ArI2c1U//8QAHRAAAgEEAwAAAAAAAAAAAAAAAAERITFBYXGBkf/aAAgBAQABPyHcGw8CehaQqdjjYcRZH//aAAwDAQACAAMAAAAQuA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAdEAEBAAEEAwAAAAAAAAAAAAABEQAhMcHhQWGx/9oACAEBAAE/EGpCqr2ZpLD2fOKSi2DfuRVt0tw38+sswB43z//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/d135462eb79eae7206e3892d16e925a6/8ac56/rh-web-ui.webp 240w,
+/static/d135462eb79eae7206e3892d16e925a6/d3be9/rh-web-ui.webp 480w,
+/static/d135462eb79eae7206e3892d16e925a6/e46b2/rh-web-ui.webp 960w,
+/static/d135462eb79eae7206e3892d16e925a6/f992d/rh-web-ui.webp 1440w,
+/static/d135462eb79eae7206e3892d16e925a6/882b9/rh-web-ui.webp 1920w,
+/static/d135462eb79eae7206e3892d16e925a6/d3f94/rh-web-ui.webp 2272w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/d135462eb79eae7206e3892d16e925a6/09b79/rh-web-ui.jpg 240w,
+/static/d135462eb79eae7206e3892d16e925a6/7cc5e/rh-web-ui.jpg 480w,
+/static/d135462eb79eae7206e3892d16e925a6/6a068/rh-web-ui.jpg 960w,
+/static/d135462eb79eae7206e3892d16e925a6/644c5/rh-web-ui.jpg 1440w,
+/static/d135462eb79eae7206e3892d16e925a6/0f98f/rh-web-ui.jpg 1920w,
+/static/d135462eb79eae7206e3892d16e925a6/c1595/rh-web-ui.jpg 2272w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/d135462eb79eae7206e3892d16e925a6/6a068/rh-web-ui.jpg&quot;
+          alt=&quot;Request Hole Web UI&quot;
+          title=&quot;Request Hole Web UI&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You can view the project at &lt;a href=&quot;https://github.com/aaronvb/request_hole&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/aaronvb/request_hole&lt;/a&gt; where the source and release files are available to download.&lt;/p&gt;
+&lt;p&gt;If you’re on a Mac, you can install it with &lt;code class=&quot;language-text&quot;&gt;brew install aaronvb/request_hole/rh&lt;/code&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Rails Inspired Logging in Go]]></title><description><![CDATA[Verbose logging in development is one of the few things I miss about Ruby on Rails. I made two libraries to bring that to Go and explain how to set that up with middleware.]]></description><link>https://aaronvb.com/articles/rails-inspired-logging-in-go</link><guid isPermaLink="false">https://aaronvb.com/articles/rails-inspired-logging-in-go</guid><pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;One of the few things I miss from &lt;a href=&quot;https://rubyonrails.org&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Ruby on Rails&lt;/a&gt; is the verbose logging the framework provides to you in development. If you’re not coming from Ruby on Rails I believe this will still be applicable and beneficial to your development in Go. &lt;/p&gt;
 &lt;p&gt;Before we jump into the details, I’d like to preface this by saying this guide to logging is meant to be used in the &lt;strong&gt;development&lt;/strong&gt; environment. While I think logging should be done in production as well, the depth of logging should be limited in any production environment where we need to take security into account. (Side note: The param logging package I’ve released will automatically filter passwords.)&lt;/p&gt;
 &lt;h3 id=&quot;the-rails-log&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-rails-log&quot; aria-label=&quot;the rails log permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Rails Log&lt;/h3&gt;
 &lt;p&gt;Below is an example of a standard log output by Rails.&lt;/p&gt;
